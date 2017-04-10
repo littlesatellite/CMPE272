@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<style>
+h2{
+    text-align: center;
+}
+form {
+    border: 3px solid #f1f1f1;
+}
+
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: #505050;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 49.5%;
+}
+    
+button.button2{
+float:right;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+
+</style>
+<body>
+
+<h2>Login</h2>
+
+<form action="actionPage.php" method="post">
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button  type="submit" name="NewUser" value="Submit">Submit</button>
+        <button  type="submit" name="NewUser" value="NewUser">New User</button>
+
+    <input type="checkbox" > Remember me
+  </div>
+
+
+</form>
+
+</body>
+</html>
