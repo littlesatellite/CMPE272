@@ -6,23 +6,23 @@
      $NewUser = $_POST['NewUser'];
  
 
-       if( !$USERNAME || !$PASSWORD ){
-           fieldsBlank();
-           die();
-       }
-
        if($NewUser == "NewUser"){
+           require "NewUser.php";
 //         if(isset($NewUser))
-           if( !( $file = fopen("password.txt","a")))
-           {
-               print( "<html><head>Error</head><body>could not open password file</body></html>");
-            die();
-           }
-           fputs( $file,"$USERNAME,$PASSWORD\n" );
-           userAdded( $USERNAME );
+//           if( !( $file = fopen("password.txt","a")))
+//           {
+//               print( "<html><head>Error</head><body>could not open password file</body></html>");
+//            die();
+//           }
+//           fputs( $file,"$USERNAME,$PASSWORD\n" );
+//           userAdded( $USERNAME );
        }
 
            else{
+            if( !$USERNAME || !$PASSWORD ){
+            fieldsBlank();
+            die();
+       }
 
                if( !($file = fopen("password.txt","r" ))){
                     print( "<html><head>Error</head><body>could not open password file</body></html>");

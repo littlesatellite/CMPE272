@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
+<DOCTYPE html>
+    <html>
+        <head>
 
 	<title>Camera Inn -- Find your camera</title>
 
@@ -22,53 +21,29 @@
 
 
 	</head>
-    
-<style>
-    
-
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
+    <style>
+#search{
+    margin-top: 30%;
+    margin-left: 30%;  
+        }
 button{
+    
     background-color: #a9e3d0;
     color: white;
-    padding: 14px 20px;
-    margin: 10px 0;
+    padding: 17px 20px;
+    margin: 15px 0;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    width: 49.5%;
+    width: 45%;
+    display: block;
 }
-    
-button.button2{
-float:right;
-}
-
 button:hover {
     opacity: 0.7;
 }
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-
-
-</style>
-<body>
-
-<div id="fh5co-page">
+    </style>
+        
+        <div id="fh5co-page">
 	<header id="fh5co-header" role="banner">
 		<div class="container">
 			<div class="header-inner">
@@ -89,24 +64,10 @@ span.psw {
 			</div>
 		</div>
 	</header>
-
-<form action="action.php" method="post">
-
-  <div class="container">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname">
-
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw">
+            
+        <div id = "search">
+<button  type="submit" name="search" value="search" onClick="window.open('searchpage.php')">Search Users</button>
+<button  type="submit" name="NewUser" value="NewUser" onClick= "window.open('NewUser.php')">New User</button>
+        </div>
         
-      <button  type="submit" name="NewUser" value="Submit">Submit</button>
-        <button  type="submit" name="NewUser" value="NewUser" >New User</button>
-
-    <input type="checkbox"> Remember me
-  </div>
-
-
-</form>
-
-</body>
 </html>
