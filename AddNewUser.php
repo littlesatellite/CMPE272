@@ -1,10 +1,5 @@
 <?php
- define('HOST','localhost');
- define('USERNAME', 'deadlock');
- define('PASSWORD','sesame');
- define('DB','test');
- 
- $con = mysqli_connect(HOST,USERNAME,PASSWORD,DB);
+$con = mysqli_connect(HOST,USERNAME,PASSWORD,DB);
  
 if (mysqli_connect_errno()) {
   printf("Connect failed: %s\n", mysqli_connect_error());
